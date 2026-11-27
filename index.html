@@ -70,8 +70,19 @@
 @media(max-width:800px){.expertise-list>div{gap:36px}}
 @media(max-width:650px){.team-expertise{margin-top:40px}.expertise-list>div{grid-template-columns:1fr;gap:12px;padding:24px 0}.footer-france{align-items:flex-start}.footer-france .brand-flag{margin-top:3px}}
 
-.human-quote blockquote{margin:0}
-.human-quote figcaption{font-size:1rem;line-height:1.5;color:#d3ded7}
+.testimonials{margin-top:48px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.testimonial-card{display:flex;flex-direction:column;margin:0;padding:32px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink)}
+.testimonial-stars{display:flex;gap:4px;color:#ffc107}
+.testimonial-stars svg{display:block;width:24px;height:24px;fill:currentColor;flex:none}
+.testimonial-card blockquote{flex:1;margin:24px 0 32px;font-size:clamp(1.125rem,1.5vw,1.3rem);line-height:1.6}
+.testimonial-card blockquote p{margin:0;max-width:65ch}
+.testimonial-card em{font-style:italic}
+.testimonial-card figcaption{display:flex;flex-direction:column;gap:4px;font-size:1.0625rem;line-height:1.45;color:var(--muted)}
+.testimonial-card figcaption strong{font-size:1.25rem;color:var(--ink)}
+.testimonial-card .testimonial-company{color:var(--orange)}
+.testimonial-source{margin:16px 0 0;font-size:.9375rem;color:#d3ded7}
+@media(max-width:700px){.testimonials{margin-top:32px}.testimonials-grid{grid-template-columns:1fr}.testimonial-card{padding:24px}.testimonial-card blockquote{margin:20px 0 28px}}
 
 .mission-note{margin-top:32px;padding:28px 32px;border:1px solid var(--line);border-radius:4px;background:var(--mist)}
 .mission-note h3{font-size:1.4rem;margin:0 0 12px}
@@ -178,8 +189,23 @@
   <div class="wrap human-grid">
    <figure class="human-visual"><img src="assets/pierre-artru-480.webp" srcset="assets/pierre-artru-480.webp 480w, assets/pierre-artru-747.webp 747w" sizes="(max-width:650px) 96px, 320px" width="747" height="934" loading="lazy" decoding="async" alt="Pierre Artru"><figcaption>Pierre Artru<br>Votre interlocuteur</figcaption></figure>
    <div class="human-copy"><h2 id="equipes">Une équipe à vos côtés.</h2><p>Pendant plus de 20 ans, j’ai dirigé des agences du groupe Altavia, au service de la grande distribution. Carrefour, Auchan, Leclerc, Système U et Intermarché faisaient partie de nos clients.</p><p>Votre équipe connaît ses clients, ses habitudes et ses exceptions. <strong>Nous construisons avec elle.</strong> Nous partons d’une tâche réelle, nous testons, puis nous décidons ensemble de la suite.</p><p>Je suis aussi formateur certifié Process Communication Model®. J’y trouve des repères pour adapter ma communication, écouter les réserves et accompagner la prise en main.</p><p class="human-statement">Le temps retrouvé doit aussi servir à manager, écouter ses équipes et aller voir ses clients.</p>
-    <figure class="human-quote"><blockquote><p>« Le Codir s'est approprié la démarche, et nous la déployons désormais à tous les niveaux de l'entreprise. »</p></blockquote><figcaption><strong>Laurent Lelimouzin</strong><br>Cofondateur, Benoit Ciné Distribution &amp; SuperGroup<br>Accompagnement à l’adoption de l’IA.<br><a href="https://artruconsulting.com/">Lire le témoignage sur Artru Consulting</a></figcaption></figure>
    </div>
+  </div>
+
+  <div class="wrap testimonials" id="temoignages">
+   <div class="testimonials-grid" role="group" aria-label="Témoignages clients sur l’accompagnement IA">
+    <figure class="testimonial-card">
+     <div class="testimonial-stars" role="img" aria-label="5 étoiles"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg></div>
+     <blockquote cite="https://artruconsulting.com/"><p><em>« Pierre nous a accompagnés avec brio dans l'adoption de l'IA. Le Codir s'est approprié la démarche, et nous la déployons désormais à tous les niveaux de l'entreprise. »</em></p></blockquote>
+     <figcaption><strong>Laurent Lelimouzin</strong><span>Cofondateur</span><span class="testimonial-company">Benoit Ciné Distribution &amp; SuperGroup</span></figcaption>
+    </figure>
+    <figure class="testimonial-card">
+     <div class="testimonial-stars" role="img" aria-label="5 étoiles"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 2.2 2.9 5.87 6.48.94-4.69 4.57 1.11 6.45L12 16.98l-5.8 3.05 1.11-6.45L2.62 9.01l6.48-.94Z"/></svg></div>
+     <blockquote><p><em>« L’intervention de Pierre auprès de notre CODIR nous a permis de mieux comprendre les enjeux de l’IA et d’identifier des applications concrètes pour notre entreprise. Une approche pragmatique et adaptée à nos besoins. »</em></p></blockquote>
+     <figcaption><strong>Richard Lerosey</strong><span>Directeur général</span><span class="testimonial-company">Héritage</span></figcaption>
+    </figure>
+   </div>
+   <p class="testimonial-source"><a href="https://artruconsulting.com/">Lire le témoignage de Laurent sur Artru Consulting</a></p>
   </div>
 
   <div class="wrap team-expertise" aria-labelledby="expertises">
