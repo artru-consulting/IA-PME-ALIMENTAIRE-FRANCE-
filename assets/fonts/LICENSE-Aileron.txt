@@ -1,0 +1,17 @@
+Aileron Regular
+
+Auteur : Sora Sagano (Dot Colon).
+Déclaration du créateur : "Aileron is No Rights Reserved."
+Cette police est mise à disposition dans le domaine public. L'auteur autorise son utilisation, sa modification et sa redistribution, sans garantie.
+
+Source officielle et déclaration de licence :
+https://dotcolon.net/fonts/aileron/
+
+Copie du fichier Aileron Regular fournie par Pillow 11.3.0, extraite sans modification de ImageFont.load_default(). Cette version comporte un jeu de caractères réduit.
+Documentation de cette distribution :
+https://pillow.readthedocs.io/en/stable/reference/ImageFont.html#PIL.ImageFont.load_default
+
+Mention intégrée au fichier de police : No Rights Reserved.
+SHA-256 : 69853909b940023570964e29cffe30da95aea8de3627736b5cd15ab30143169f
+
+La déclaration CSS du site limite son usage aux chiffres U+0030-0039. Les autres caractères restent dans la police Atkinson Hyperlegible.
