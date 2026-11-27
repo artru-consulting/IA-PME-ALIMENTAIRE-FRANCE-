@@ -26,6 +26,7 @@ L'IA au service des PME françaises.
 
 ## Ajouts du 27 novembre
 
+- Positionnement ouvert aux fabricants et distributeurs de produits alimentaires et non alimentaires. Accroche : « L’IA qui travaille vraiment dans votre PME. » Les questions s'adressent à un dirigeant de PME et les dossiers de négociation sont présentés par client. Les métadonnées de partage reprennent ce positionnement.
 - Sous le rendez-vous du haut de page : préciser qu'un réglage ou un logiciel peut suffire, sans recourir à l'IA.
 - FAQ : essais à côté du fonctionnement habituel, validation de la mise en service et retour au fonctionnement précédent ; comptes et accès maîtrisés par le client, documentation et éléments remis pour permettre la reprise. Les vérifications sur les données mentionnent aussi l'entraînement des modèles.
 - Méthode : date du premier essai et étapes de mise en service fixées après le diagnostic. Aucun délai de démarrage imposé à tous les projets.
@@ -35,11 +36,13 @@ L'IA au service des PME françaises.
 
 ## Vérifications avant validation
 
-Contrôles du code et des fichiers passés : liens locaux et ancres, dimensions des images, FAQ, texte, intégrité de robots.txt et du PDF, absence de CNAME. Le titre du haut de page, les tarifs et le script restent identiques à la version précédente. Le script réel avait aussi été exécuté avec une simulation du DOM pour vérifier les onglets, le clavier, le menu et les liens de rendez-vous.
+Contrôles du code et des fichiers passés : liens locaux et ancres, dimensions des images, FAQ, texte, intégrité de robots.txt et du PDF, absence de CNAME. Les tarifs et le script restent identiques à la version précédente. Le script réel avait aussi été exécuté avec une simulation du DOM pour vérifier les onglets, le clavier, le menu et les liens de rendez-vous.
 
 Vérifications dans l'aperçu local le 27 novembre : captures pleine page à 1440 px et 390 px, lisibilité du haut de page, du témoignage et des tarifs, photos chargées, absence de débordement horizontal sur mobile, onglets au clic et au clavier, menu mobile et ouverture des nouvelles questions au clic et au clavier. Les zéros des prix et du téléphone sont normaux. Aucun message d'erreur ou d'avertissement dans la console de l'aperçu du navigateur intégré.
 
 La mise en forme des deux témoignages a aussi été vérifiée à 1440 px et 390 px : deux colonnes sur ordinateur, une colonne sur mobile, citations en italique, cinq étoiles jaunes par bloc et noms lisibles. Aucun débordement horizontal ni erreur de console observés dans l'aperçu.
+
+La nouvelle accroche et le texte destiné aux fabricants et distributeurs ont été vérifiés à 1440 px et 390 px. Aucun débordement horizontal ni erreur de console observés. Le premier onglet reste « Négociations & direction » et le lien de rendez-vous reste celui de 30 minutes.
 
 Le lien Calendly a été ouvert : la page affiche bien « Claudets · Échange découverte IA · 30 min ». Les adresses tel: et mailto: ont été vérifiées sans déclencher d'appel ni de message. Captures, diff et compte rendu sont conservés dans le dossier de revue du 27 novembre, à côté de la copie du dépôt.
 
